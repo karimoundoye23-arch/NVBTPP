@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Ad Creation Services</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #9d50bb;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #6e48aa;
+        }
+        
+        /* Services Section */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #6e48aa;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .service-card p {
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #9d50bb;
+            font-size: 1.2rem;
+        }
+        
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-table th, .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .pricing-table th {
+            background-color: #6e48aa;
+            color: white;
+        }
+        
+        .pricing-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* Order Form */
+        .order-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roxy's Ad Creation Services</h1>
+            <p>Professional ad creation for all major social media platforms to boost your online presence and engagement</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="main-content container">
+        <section id="services">
+            <h2 class="section-title">Our Ad Creation Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>TikTok Ads</h3>
+                    <p>Engaging, trendy TikTok ads designed to capture attention and drive conversions with music, effects, and creative transitions.</p>
+                    <p class="price">Starting at $50 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>YouTube Ads</h3>
+                    <p>High-quality YouTube ads including skippable and non-skippable formats, bumper ads, and discovery ads optimized for your target audience.</p>
+                    <p class="price">Starting at $75 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Facebook Ads</h3>
+                    <p>Effective Facebook ads including carousel, collection, and video ads designed to increase engagement and conversions.</p>
+                    <p class="price">Starting at $45 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Instagram Ads</h3>
+                    <p>Visually appealing Instagram ads including stories, reels, feed posts, and shopping ads tailored to your brand aesthetic.</p>
+                    <p class="price">Starting at $45 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Snapchat Ads</h3>
+                    <p>Creative Snapchat ads including AR lenses, filters, and story ads designed to engage the younger demographic.</p>
+                    <p class="price">Starting at $95 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Website Ads</h3>
+                    <p>Eye-catching banner ads, pop-ups, and display ads optimized for websites to increase click-through rates.</p>
+                    <p class="price">Starting at $125 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Video Ads</h3>
+                    <p>Professional video ads for any platform with scripting, filming (stock footage), editing, and optimization.</p>
+                    <p class="price">Starting at $75 per ad</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Photo Ads</h3>
+                    <p>High-quality photo ads with professional editing, text overlays, and branding for any social platform.</p>
+                    <p class="price">Starting at $30 per ad</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pricing">
+            <h2 class="section-title">Detailed Pricing</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic Package</th>
+                        <th>Standard Package</th>
+                        <th>Premium Package</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TikTok Ads</td>
+                        <td>$50 (1 ad, basic editing)</td>
+                        <td>$125 (2 ads, advanced effects)</td>
+                        <td>$180 (4 ads, custom music/sound)</td>
+                    </tr>
+                    <tr>
+                        <td>YouTube Ads</td>
+                        <td>$75 (30-sec ad)</td>
+                        <td>$175 (60-sec ad + thumbnail)</td>
+                        <td>$275 (2 min ad + A/B testing versions)</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook Ads</td>
+                        <td>$45 (single image ad)</td>
+                        <td>$95(carousel ad 3 images)</td>
+                        <td>$150 (video ad + multiple formats)</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram Ads</td>
+                        <td>$45(feed post)</td>
+                        <td>$75(feed + story ad)</td>
+                        <td>$95(3-story ad set + reel)</td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat Ads</td>
+                        <td>$55(basic filter)</td>
+                        <td>$75(AR lens)</td>
+                        <td>$95(sponsored story + lens)</td>
+                    </tr>
+                    <tr>
+                        <td>Website Ads</td>
+                        <td>$125 (static banner)</td>
+                        <td>$125 (animated banner)</td>
+                        <td>$250 (3 size variations)</td>
+                    </tr>
+                    <tr>
+                        <td>Video Ads</td>
+                        <td>$75 (30-sec stock footage)</td>
+                        <td>$125 (60-sec custom script)</td>
+                        <td>$500 (2-min professional shoot)</td>
+                    </tr>
+                    <tr>
+                        <td>Photo Ads</td>
+                        <td>$30 (single image)</td>
+                        <td>$75 (3-image set)</td>
+                        <td>$185 (10-image package)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="order">
+            <h2 class="section-title">Order Your Custom Ad</h2>
+            <form class="order-form" action="mailto:Roxymane72@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="platform">Platform(s) for Ad</label>
+                    <select id="platform" name="platform" multiple>
+                        <option value="tiktok">TikTok</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="snapchat">Snapchat</option>
+                        <option value="website">Website</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ad-type">Type of Ad</label>
+                    <select id="ad-type" name="ad-type">
+                        <option value="video">Video Ad</option>
+                        <option value="photo">Photo Ad</option>
+                        <option value="carousel">Carousel Ad</option>
+                        <option value="story">Story Ad</option>
+                        <option value="banner">Banner Ad</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="package">Package Level</label>
+                    <select id="package" name="package">
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Describe Your Ad Requirements</label>
+                    <textarea id="description" name="description" required placeholder="Please describe what you need in your ad, including any specific messaging, branding requirements, target audience, and goals for the ad campaign."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="deadline">Desired Completion Date</label>
+                    <input type="date" id="deadline" name="deadline">
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Order Request</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <div class="container">
+            <h3>Roxy's Ad Creation Services</h3>
+            <p>Professional ad creation for all your marketing needs</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:Roxymane72@gmail.com" style="color: #9d50bb;">Roxymane72@gmail.com</a></p>
+                <p>Contact me for custom quotes and bulk order discounts!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
